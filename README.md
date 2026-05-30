@@ -9,9 +9,9 @@
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.2+-green?style=for-the-badge&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
 [![Groq](https://img.shields.io/badge/Groq-LLaMA_3.3_70B-orange?style=for-the-badge)](https://groq.com)
 [![Tavily](https://img.shields.io/badge/Tavily-Search_API-purple?style=for-the-badge)](https://tavily.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-[Live Demo](https://startup-analyser.streamlit.app) • [Report Bug](https://github.com/harsimar-singh03/startup-analyser/issues) • [Request Feature](https://github.com/harsimar-singh03/startup-analyser/issues)
+
+[Live Demo](https://startupanalyser.streamlit.app)
 
 </div>
 
@@ -20,9 +20,9 @@
 ## 📸 Interface
 
 <p align="center">
-  <img src="ui.png" alt="Startup Intelligence Agent UI" width="48%"/>
-  &nbsp;
-  <img src="ui1.png" alt="Startup Intelligence Agent UI 2" width="48%"/>
+  <img src="ui.png" alt="Startup Intelligence Agent UI" width="80%"/>
+  <br/><br/>
+  <img src="ui1.png" alt="Startup Intelligence Agent UI 2" width="80%"/>
 </p>
 
 ---
@@ -145,8 +145,6 @@ TAVILY_API_KEY=your_tavily_api_key_here
 streamlit run app.py
 ```
 
-The app will open at `http://localhost:8501`
-
 ---
 
 ## 📦 Requirements
@@ -227,11 +225,6 @@ The reflection node uses a **checklist-based prompt** to evaluate each tool:
 | [SQLite](https://sqlite.org) | Chat and research persistence |
 | Python asyncio | Parallel tool execution |
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
