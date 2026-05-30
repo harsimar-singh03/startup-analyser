@@ -1,4 +1,4 @@
-from streamlit import st
+import streamlit as st
 
 from tavily import TavilyClient
 from dotenv import load_dotenv
@@ -8,9 +8,16 @@ import os
 
 load_dotenv()
 
-client = TavilyClient(
-api_key = os.getenv("TAVILY_API_KEY") or st.secrets.get("TAVILY_API_KEY")
-)
+def get_secret(key):
+    value = os.getenv(key)
+    if value:
+        return value
+    try:
+        return st.secrets[key]
+    except:
+        return None
+
+client = TavilyClient(api_key=get_secret("TAVILY_API_KEY"))
 
 def competitor_scan_tool(startup_idea: str):
 
